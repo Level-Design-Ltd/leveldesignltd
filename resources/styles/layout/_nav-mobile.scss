@@ -41,11 +41,21 @@
         padding: 0 map-get($layout-map, --base-margin);
 
         .menu-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.375rem;
+            font-weight: bold;
+            text-align: left;
             position: relative;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.75rem;
             margin-left: auto;
             margin-right: auto;
             width: 100%;
+
+            &:first-child {
+                margin-top: 5rem;
+            }
 
             > a {
                 color: var(--brand-dark);
@@ -53,11 +63,18 @@
                 padding-top: 0.25rem;
                 padding-bottom: 0.25rem;
                 padding-right: 1rem;
+
+                @include respond(tablet) {
+                    &:hover,
+                    &:active {
+                        color: var(--brand-secondary);
+                    }
+                }
             }
 
             &.current-menu-item {
                 > a {
-                    color: var(--brand-primary);
+                    color: var(--brand-secondary);
                 }
             }
         }
@@ -142,23 +159,6 @@
 
     .menu-primary-menu-container {
         order: 1;
-
-        .nav {
-            .menu-item {
-                display: flex;
-                align-items: center;
-                font-size: 0.9375rem;
-                text-align: left;
-
-                @include respond(mobile) {
-                    font-size: 1rem;
-                }
-
-                &:first-child {
-                    margin-top: 1.375rem;
-                }
-            }
-        }
     }
 }
 

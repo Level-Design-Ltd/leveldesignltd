@@ -1,3 +1,8 @@
 <footer class="content-info">
-  @php(dynamic_sidebar('sidebar-footer'))
+	<div class="half">
+
+	</div>
+	<div class="half">
+		
+	</div>
 </footer>

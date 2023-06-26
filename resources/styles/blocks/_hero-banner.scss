@@ -81,6 +81,12 @@
                 min-height: 56.25rem;
             }
         }
+
+        &.wp-block-column {
+            img {
+                @extend .blob-animated;
+            }
+        }
     }
 }
 
