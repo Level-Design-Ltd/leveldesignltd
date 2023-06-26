@@ -1,7 +1,6 @@
 .main {
-    // > div:first-of-type {
-    //     &:not(.wp-block-cover) {
-    //         margin-top: 5rem;
-    //     }
-    // }
+    > [class*="wp-block-"] {
+        padding-left: map-get($layout-map, --base-margin);
+        padding-right: map-get($layout-map, --base-margin);
+    }
 }
