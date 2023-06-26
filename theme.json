@@ -1,0 +1,102 @@
+{
+  "__generated__": "⚠️ This file is generated. Do not edit.",
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 2,
+  "settings": {
+    "color": {
+      "custom": false,
+      "customDuotone": false,
+      "customGradient": false,
+      "defaultDuotone": false,
+      "defaultGradients": false,
+      "defaultPalette": false,
+      "duotone": [],
+      "palette": [
+        {
+          "name": "Black",
+          "slug": "black",
+          "color": "#000000"
+        },
+        {
+          "name": "White",
+          "slug": "white",
+          "color": "#ffffff"
+        },
+        {
+          "name": "Brand Dark",
+          "slug": "brand dark",
+          "color": "#0e1129"
+        },
+        {
+          "name": "Brand Light",
+          "slug": "brand light",
+          "color": "#edf2f4"
+        },
+        {
+          "name": "Brand Primary",
+          "slug": "brand primary",
+          "color": "#7759d2"
+        },
+        {
+          "name": "Brand Secondary",
+          "slug": "brand secondary",
+          "color": "#004fff"
+        },
+        {
+          "name": "Brand Tertiary",
+          "slug": "brand tertiary",
+          "color": "#e2b8f6"
+        }
+      ]
+    },
+    "custom": {
+      "spacing": {},
+      "typography": {
+        "font-size": {},
+        "line-height": {}
+      }
+    },
+    "spacing": {
+      "padding": true,
+      "units": [
+        "px",
+        "%",
+        "em",
+        "rem",
+        "vw",
+        "vh"
+      ]
+    },
+    "typography": {
+      "customFontSize": false,
+      "fontFamilies": [],
+      "fontSizes": [
+        {
+          "name": "Paragraph 5",
+          "slug": "Paragraph 5",
+          "size": "12px"
+        },
+        {
+          "name": "Paragraph 4",
+          "slug": "Paragraph 4",
+          "size": "16px"
+        },
+        {
+          "name": "Paragraph 3",
+          "slug": "Paragraph 3",
+          "size": "18px"
+        },
+        {
+          "name": "Paragraph 2",
+          "slug": "Paragraph 2",
+          "size": "20px"
+        },
+        {
+          "name": "Paragraph 1",
+          "slug": "Paragraph 1",
+          "size": "33px"
+        }
+      ]
+    }
+  }
+}

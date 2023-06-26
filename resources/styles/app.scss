@@ -1,0 +1,22 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+// Common
+@import "common/variables";
+@import "common/mixins";
+@import "common/root";
+@import "common/typography";
+@import "common/global";
+
+// Layout
+@import "layout/layout";
+@import "layout/header";
+// @import "layout/nav-desktop";
+@import "layout/nav-mobile";
+
+// Components
+@import "components/blob";
+
+// Blocks
+@import "blocks/hero-banner";

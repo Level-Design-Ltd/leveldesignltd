@@ -1,0 +1,45 @@
+$colour-map: (
+    --black: #000000,
+    --white: #ffffff,
+    --brand-dark: #0e1129,
+    --brand-light: #edf2f4,
+    --brand-primary: #7759d2,
+    --brand-secondary: #004fff,
+    --brand-tertiary: #e2b8f6,
+    --brand-gradient:
+        linear-gradient(
+            90deg,
+            rgba(119, 89, 210, 1) 0%,
+            rgba(226, 184, 246, 1) 100%
+        ),
+);
+
+$transition: all 0.25s ease-in-out;
+
+/** Box Model  */
+$spacer: 2rem;
+
+$layout-map: (
+    --wide-container: 1600px,
+    --container: 1360px,
+    --small-container: 1140px,
+    --base-margin: 20px,
+);
+
+/** Merge maps to be output in the :root */
+$root-variables: map-merge($colour-map, $layout-map);
+
+/** Fonts */
+$base-font: "Source Sans Pro", sans-serif;
+$bold-font: "Source Sans Pro", sans-serif;
+
+/** Include Media */
+$breakpoints: (
+    "xsmall": 380px,
+    "mobile": 480px,
+    "phablet": 600px,
+    "tablet": 768px,
+    "laptop": 992px,
+    "desktop": 1200px,
+    "widescreen": 1500px,
+);

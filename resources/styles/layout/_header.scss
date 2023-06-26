@@ -1,0 +1,65 @@
+.banner {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    transition: $transition;
+    background-color: transparent;
+    display: flex;
+    max-height: 100%;
+    height: 5rem;
+    transition: $transition;
+
+    &.open {
+        background-color: map-get($colour-map, --brand-dark);
+    }
+
+    .wide-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .logo {
+        height: 100%;
+        position: relative;
+        min-width: 10rem;
+
+        @include respond(tablet) {
+            min-width: 12.25rem;
+        }
+
+        @include respond(desktop) {
+            min-width: 21.875rem;
+        }
+
+        img,
+        svg {
+            height: 100%;
+            transition: $transition;
+            max-width: 10rem;
+
+            @include respond(tablet) {
+                max-width: 12.25rem;
+                width: 100%;
+            }
+
+            @include respond(desktop) {
+                max-width: 21.875rem;
+            }
+        }
+    }
+
+    &.scrolled {
+        background-color: map-get($colour-map, --white);
+        box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.15);
+
+        .logo {
+            @include respond(desktop) {
+                min-width: 16.25rem;
+            }
+        }
+    }
+}

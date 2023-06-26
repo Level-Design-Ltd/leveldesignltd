@@ -1,0 +1,137 @@
+html {
+    font-size: 16px;
+    font-family: $base-font;
+    font-display: swap;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: var(--brand-light);
+    color: var(--brand-dark);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+
+    &::after {
+        content: "";
+        opacity: 0;
+        background-color: var(--black);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+        pointer-events: none;
+        transition: all 0.5s ease-out;
+        z-index: 1;
+    }
+
+    &.menu-open {
+        overflow: hidden;
+        touch-action: none;
+        width: 100%;
+
+        &::after {
+            opacity: 0.5;
+        }
+
+        @include respond(tablet) {
+            overflow: initial;
+        }
+    }
+}
+
+#loading-screen {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    background: #fff;
+}
+
+.container,
+.small-container,
+.wide-container {
+    position: relative;
+    padding-left: map-get($layout-map, --base-margin);
+    padding-right: map-get($layout-map, --base-margin);
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.container {
+    max-width: map-get($layout-map, --container);
+}
+
+.small-container {
+    max-width: map-get($layout-map, --small-container);
+}
+
+.wide-container {
+    max-width: map-get($layout-map, --wide-container);
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Custom Select */
+.select {
+    border-radius: 0.25em;
+    border: 1px solid #b1b1b1;
+    display: flex;
+    line-height: 3;
+    overflow: hidden;
+    position: relative;
+    height: 3em;
+    width: 100%;
+
+    @include respond(tablet) {
+        width: 20em;
+    }
+}
+
+select {
+    appearance: none;
+    background-color: map-get($colour-map, --white);
+    border: none;
+    cursor: pointer;
+    flex: 1;
+    padding: 0 0.5em;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+/* Arrow */
+.select::after {
+    content: "";
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16.536' height='9.268' viewBox='0 0 16.536 9.268'%3E%3Cpath id='chevron-right' d='M0,0,6.854,6.854,0,13.708' transform='translate(15.122 1.414) rotate(90)' fill='none' stroke='%23747373' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'/%3E%3C/svg%3E%0A");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 15px;
+    border-left: 1px solid #b1b1b1;
+    cursor: pointer;
+    padding: 0 1em;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: 0.25s all ease;
+    height: 100%;
+    width: 15px;
+}
+
+.grecaptcha-badge {
+    z-index: 10;
+}

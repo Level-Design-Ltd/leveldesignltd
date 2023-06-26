@@ -1,0 +1,27 @@
+/*
+ * CSS custom properties
+ *
+ * Custom properties can be applied to html or :root
+ * :root will target root selector of SVGs as well, for example
+ */
+:root {
+    @each $prop, $variable in $root-variables {
+        #{$prop}: $variable;
+    }
+
+    --blob-position-x: 0.5;
+    --blob-position-y: 1.3;
+}
+
+@include respond(mobile) {
+    :root {
+        --blob-position-x: 0.7;
+        --blob-position-y: 1.5;
+    }
+}
+
+@include respond(phablet) {
+    :root {
+        --blob-position-x: 0.8;
+    }
+}

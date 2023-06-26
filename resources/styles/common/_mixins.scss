@@ -1,0 +1,56 @@
+// Media queries
+@mixin respond($breakpoint, $minmax: "min") {
+    // https://dev.to/heytulsiprasad/easy-to-write-media-queries-using-sass-mixins-1p2f
+
+    @if $breakpoint==widescreen {
+        @media only screen and (#{$minmax}-width: map-get($breakpoints, "widescreen")) {
+            @content;
+        }
+    }
+
+    @if $breakpoint==desktop {
+        @media only screen and (#{$minmax}-width: map-get($breakpoints, "desktop")) {
+            @content;
+        }
+    }
+
+    @if $breakpoint==laptop {
+        @media only screen and (#{$minmax}-width: map-get($breakpoints, "laptop")) {
+            @content;
+        }
+    }
+
+    @if $breakpoint==tablet {
+        @media only screen and (#{$minmax}-width: map-get($breakpoints, "tablet")) {
+            @content;
+        }
+    }
+
+    @if $breakpoint==phablet {
+        @media only screen and (#{$minmax}-width: map-get($breakpoints, "phablet")) {
+            @content;
+        }
+    }
+
+    @if $breakpoint==mobile {
+        @media only screen and (#{$minmax}-width: map-get($breakpoints, "mobile")) {
+            @content;
+        }
+    }
+
+    @if $breakpoint==xsmall {
+        @media only screen and (#{$minmax}-width: map-get($breakpoints, "xsmall")) {
+            @content;
+        }
+    }
+}
+
+@mixin text-lines($lines) {
+    display: -webkit-box;
+    line-clamp: $lines;
+    -webkit-line-clamp: $lines; /* Number of lines to display */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-bottom: 0.625rem;
+}
