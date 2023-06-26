@@ -1,5 +1,5 @@
 .main {
-    > [class*="wp-block-"] {
+    > * {
         padding-left: map-get($layout-map, --base-margin);
         padding-right: map-get($layout-map, --base-margin);
     }

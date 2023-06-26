@@ -29,6 +29,14 @@
         }
     }
 
+    p {
+        text-align: center;
+
+        @include respond(tablet) {
+            text-align: left;
+        }
+    }
+
     .hero-blob {
         opacity: 0.25;
         pointer-events: none;
