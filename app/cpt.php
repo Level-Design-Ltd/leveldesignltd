@@ -14,15 +14,18 @@ if (class_exists('LevelDesignLteCpt') === false) {
          * @var array
          */
         private $cpts = [
-            "our-work" => [
-                "singleLower" => "work",
-                "singleUpper" => "Work",
-                "pluralLower" => "our work",
-                "pluralUpper" => "Our Work",
+            "project" => [
+                "singleLower" => "project",
+                "singleUpper" => "Project",
+                "pluralLower" => "projects",
+                "pluralUpper" => "Projects",
                 "dashicon"    => "schedule",
                 "description" => "Our Work",
                 "supports"    => [
                     "title",
+                    "editor",
+                    "excerpt",
+                    "thumbnail",
                 ],
             ],
         ];

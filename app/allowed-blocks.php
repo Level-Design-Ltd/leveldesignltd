@@ -8,7 +8,7 @@
 // if ( false !== strpos( $_SERVER['REQUEST_URI'], '/wp-admin/post.php' ) || false !== strpos( $_SERVER['REQUEST_URI'], '/wp-admin/post-new.php' ) ) {
 // 	add_filter( 'allowed_block_types_all', function () {
 // 		return array(
-// 			'core/container',
+// 			'core/group',
 // 			'core/image',
 // 			'core/cover',
 // 			'core/paragraph',

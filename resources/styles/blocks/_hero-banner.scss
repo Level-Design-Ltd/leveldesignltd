@@ -1,6 +1,11 @@
 .hero-banner {
+    max-height: 26.75rem;
     overflow: hidden;
     position: relative;
+
+    @include respond(tablet) {
+        max-height: none;
+    }
 
     .wp-block-columns {
         min-height: 25rem;
@@ -67,12 +72,13 @@
             object-position: bottom center;
             height: 100%;
             width: 100%;
+            min-height: 26.75rem;
 
             @include respond(tablet) {
                 animation: blob-hero-animated 15s linear infinite alternate;
                 border-radius: 48% 0% 0% 48% / 44% 0% 0% 56%;
-                min-height: 56.25rem;
                 height: 100vh;
+                min-height: 56.25rem;
             }
         }
     }
