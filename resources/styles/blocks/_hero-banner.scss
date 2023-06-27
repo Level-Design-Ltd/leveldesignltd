@@ -56,7 +56,9 @@
     }
 
     p {
+        position: relative;
         text-align: center;
+        z-index: 1;
 
         @include respond(tablet) {
             text-align: left;
