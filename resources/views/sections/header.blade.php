@@ -1,8 +1,11 @@
 <header class="banner">
-	@php $site_logo = get_field('site_logo', 'options') @endphp
+	@php
+		$site_logo = get_field('site_logo', 'options');
+		$burger_menu_colour = get_field('burger_menu_colour', get_the_ID());
+	@endphp
 	
 	@if ($site_logo)
-		<a class="logo" href="{{ home_url('/') }}">
+		<a class="logo {!! $burger_menu_colour ?: $burger_menu_colour !!}" href="{{ home_url('/') }}">
 			<img class="logo-img" src="{!! esc_url($site_logo['url']) !!}" alt="{!! esc_attr($site_logo['alt']) !!}" />
 		</a>
 	@endif

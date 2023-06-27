@@ -1,0 +1,22 @@
+.footer {
+    background-color: map-get($colour-map, --brand-dark);
+
+    .wide-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .footer-logo {
+        height: 100%;
+        position: relative;
+
+        img,
+        svg {
+            transition: $transition;
+            height: 7.5rem;
+            width: 7.5rem;
+        }
+    }
+}

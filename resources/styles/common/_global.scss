@@ -135,3 +135,7 @@ select::-ms-expand {
 .grecaptcha-badge {
     z-index: 10;
 }
+
+.has-brand-gradient-background-color {
+    background: var(--wp--preset--color--brand-gradient) !important;
+}

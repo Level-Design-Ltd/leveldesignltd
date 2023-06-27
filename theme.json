@@ -46,6 +46,11 @@
           "name": "Brand Tertiary",
           "slug": "brand tertiary",
           "color": "#e2b8f6"
+        },
+        {
+          "name": "Brand Gradient",
+          "slug": "brand gradient",
+          "color": "linear-gradient(90deg,rgb(119, 89, 210) 0%,rgb(14, 17, 41) 100%)"
         }
       ]
     },

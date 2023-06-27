@@ -11,14 +11,35 @@
         min-height: 25rem;
 
         @include respond(tablet) {
-            height: 100vh;
             max-height: 45rem;
+
+            body.home & {
+                height: 100vh;
+            }
+        }
+    }
+
+    .wp-block-buttons {
+        justify-content: center;
+        position: relative;
+        z-index: 1;
+
+        @include respond(tablet) {
+            justify-content: unset;
+        }
+
+        .wp-block-button__link {
+            line-height: 1rem;
+
+            @include respond(tablet) {
+                line-height: 1.5rem;
+            }
         }
     }
 
     h1 {
-        @include text-lines(2);
-        margin-top: 7.5rem;
+        @include lines(2);
+        margin-top: 5rem;
         margin-bottom: 0;
         position: relative;
         text-align: center;
@@ -30,7 +51,7 @@
         }
 
         .spintax {
-            @include text-lines(2);
+            @include lines(2);
         }
     }
 

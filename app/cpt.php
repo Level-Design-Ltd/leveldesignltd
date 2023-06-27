@@ -28,6 +28,18 @@ if (class_exists('LevelDesignLteCpt') === false) {
                     "thumbnail",
                 ],
             ],
+            // "testimonial" => [
+            //     "singleLower" => "testimonial",
+            //     "singleUpper" => "Testimonial",
+            //     "pluralLower" => "testimonials",
+            //     "pluralUpper" => "Testimonials",
+            //     "dashicon"    => "format-chat",
+            //     "description" => "Our Clients",
+            //     "supports"    => [
+            //         "title",
+            //         "excerpt",
+            //     ],
+            // ],
         ];
 
         /**

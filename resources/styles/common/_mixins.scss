@@ -45,7 +45,7 @@
     }
 }
 
-@mixin text-lines($lines) {
+@mixin lines($lines) {
     display: -webkit-box;
     line-clamp: $lines;
     -webkit-line-clamp: $lines; /* Number of lines to display */

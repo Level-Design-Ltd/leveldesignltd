@@ -25,29 +25,18 @@
     .logo {
         height: 100%;
         position: relative;
-        min-width: 10rem;
-
-        @include respond(tablet) {
-            min-width: 12.25rem;
-        }
-
-        @include respond(desktop) {
-            min-width: 21.875rem;
-        }
 
         img,
         svg {
-            height: 100%;
             transition: $transition;
-            max-width: 10rem;
+            height: 100%;
+            width: 100%;
+        }
 
-            @include respond(tablet) {
-                max-width: 12.25rem;
-                width: 100%;
-            }
-
-            @include respond(desktop) {
-                max-width: 21.875rem;
+        &.dark {
+            img,
+            svg {
+                mix-blend-mode: difference;
             }
         }
     }
@@ -57,8 +46,9 @@
         box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.15);
 
         .logo {
-            @include respond(desktop) {
-                min-width: 16.25rem;
+            img,
+            svg {
+                mix-blend-mode: difference;
             }
         }
     }
