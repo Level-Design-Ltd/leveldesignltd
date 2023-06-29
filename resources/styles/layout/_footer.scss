@@ -28,6 +28,10 @@
         @include respond(tablet) {
             flex-direction: row;
             width: auto;
+
+            > a {
+                margin-left: 1.25rem;
+            }
         }
     }
 
