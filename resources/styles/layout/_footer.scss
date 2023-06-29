@@ -30,6 +30,7 @@
             width: auto;
 
             > a {
+                color: map-get($colour-map, --white);
                 margin-left: 1.25rem;
             }
         }
