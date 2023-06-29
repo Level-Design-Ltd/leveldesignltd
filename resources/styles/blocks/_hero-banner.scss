@@ -12,6 +12,7 @@
 
         @include respond(tablet) {
             max-height: 45rem;
+            height: 80vh;
 
             body.home & {
                 height: 100vh;

@@ -12,8 +12,8 @@
 			{!! __('© 2023 Level Design Ltd', 'leveldesignltd') !!}
 		</div>
 		<div class="half">
-			{!! __('Privacy Policy', 'leveldesignltd') !!}
-			{!! __('Terms & Conditions', 'leveldesignltd') !!}
+			<a href="/privacy-policy">{!! __('Privacy Policy', 'leveldesignltd') !!}</a>
+			<a href="/terms-and-conditions">{!! __('Terms & Conditions', 'leveldesignltd') !!}</a>
 		</div>
 	</div>
 </footer>

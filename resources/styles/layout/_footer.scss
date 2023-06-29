@@ -3,6 +3,10 @@
     color: map-get($colour-map, --white);
     padding-bottom: 2.5rem;
 
+    @include respond(tablet) {
+        padding-bottom: 0;
+    }
+
     .wide-container {
         display: flex;
         flex-direction: column;
