@@ -1,0 +1,60 @@
+.wpcf7-form {
+    p {
+        margin-bottom: 0;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+        border: 1px solid map-get($colour-map, --brand-primary);
+        border-radius: 0.625rem;
+        height: 2.5rem;
+        padding: 0.25rem 0.875rem;
+        width: 100%;
+
+        &.wpcf7-not-valid {
+            border-color: #dc3232;
+        }
+    }
+
+    textarea {
+        border: 1px solid map-get($colour-map, --brand-primary);
+        border-radius: 0.625rem;
+        padding: 0.25rem 0.875rem;
+        width: 100%;
+
+        &.wpcf7-not-valid {
+            border-color: #dc3232;
+        }
+    }
+
+    .wpcf7-not-valid-tip,
+    .wpcf7-response-output {
+        display: none;
+    }
+
+    .wpcf7-submit {
+        background: map-get($colour-map, --brand-primary);
+        border-width: 0;
+        border-radius: 0.625rem;
+        color: map-get($colour-map, --white);
+        cursor: pointer;
+        display: block;
+        font-family: inherit;
+        font-size: inherit;
+        font-weight: bold;
+        line-height: inherit;
+        margin: 1.25rem auto;
+        padding: calc(0.667em + 2px) calc(1.333em + 2px);
+        text-decoration: none;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+            opacity: 0.9;
+        }
+    }
+
+    .wpcf7-spinner {
+        display: block;
+        margin: 0 auto;
+    }
+}
