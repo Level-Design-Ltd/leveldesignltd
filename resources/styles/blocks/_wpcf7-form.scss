@@ -32,6 +32,15 @@
         display: none;
     }
 
+    &.sent .wpcf7-response-output {
+        background: var(--brand-dark);
+        border-color: var(--brand-dark);
+        border-radius: 0.625rem;
+        color: var(--white);
+        font-size: 1.3125rem;
+        text-align: center;
+    }
+
     .wpcf7-submit {
         background: map-get($colour-map, --brand-primary);
         border-width: 0;
