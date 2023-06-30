@@ -28,7 +28,7 @@
     }
 
     .wpcf7-not-valid-tip,
-    .wpcf7-response-output {
+    &[data-status="invalid"] .wpcf7-response-output {
         display: none;
     }
 
