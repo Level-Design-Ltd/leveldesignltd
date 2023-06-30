@@ -5,7 +5,10 @@ add_action('wp_footer', function() {
 	<script type="text/javascript">
 		document.addEventListener( 'wpcf7mailsent', function( event ) {
 			if ('236' == event.detail.contactFormId) {
-				document.getElementById('wpcf7-f236-p2-o1 form p').style.display = 'none';
+				const formFields = document.querySelectorAll('#wpcf7-f236-p2-o1 form p');
+				formFields.forEach(fields => {
+					fields.style.display = 'none';
+				});
 			}
 		}, false );
 	</script>
