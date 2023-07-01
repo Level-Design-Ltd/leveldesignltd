@@ -136,12 +136,22 @@ select::-ms-expand {
     z-index: 10;
 }
 
-.has-brand-gradient-color {
-    background: var(--wp--preset--color--brand-gradient) !important;
+.has-brand-gradient-light-color {
+    background: var(--wp--preset--color--brand-gradient-light) !important;
     -webkit-background-clip: text !important;
     -webkit-text-fill-color: transparent;
 }
 
-.has-brand-gradient-background-color {
-    background: var(--wp--preset--color--brand-gradient) !important;
+.has-brand-gradient-light-color {
+    background: var(--wp--preset--color--brand-gradient-dark) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent;
+}
+
+.has-brand-gradient-light-background-color {
+    background: var(--wp--preset--color--brand-gradient-light) !important;
+}
+
+.has-brand-gradient-dark-background-color {
+    background: var(--wp--preset--color--brand-gradient-dark) !important;
 }

@@ -10,7 +10,9 @@ module.exports = {
             "Brand Primary": "#7759d2",
             "Brand Secondary": "#004fff",
             "Brand Tertiary": "#e2b8f6",
-            "Brand Gradient":
+            "Brand Gradient Light":
+                "linear-gradient(90deg,rgb(119, 89, 210) 0%,rgb(226, 184, 246) 100%)",
+            "Brand Gradient Dark":
                 "linear-gradient(90deg,rgb(119, 89, 210) 0%,rgb(14, 17, 41) 100%)",
         },
         fontSize: {

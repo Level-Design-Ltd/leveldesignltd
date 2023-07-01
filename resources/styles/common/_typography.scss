@@ -22,17 +22,10 @@ h1 {
         font-size: 5.75rem;
     }
 
-    // color: map-get($colour-map, --brand-primary);
-    // text-shadow: 0 -40px 100px, 0 0 2px,
-    //     0 0 1em map-get($colour-map, --brand-primary),
-    //     0 0 0.5em map-get($colour-map, --brand-primary),
-    //     0 0 0.1em map-get($colour-map, --brand-primary),
-    //     0 10px 3px map-get($colour-map, --black);
-
     > span,
     > strong {
         @supports (-webkit-background-clip: text) {
-            background: map-get($colour-map, --brand-gradient);
+            background: map-get($colour-map, --brand-gradient-light);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
