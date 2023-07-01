@@ -48,8 +48,13 @@
           "color": "#e2b8f6"
         },
         {
-          "name": "Brand Gradient",
-          "slug": "brand gradient",
+          "name": "Brand Gradient Light",
+          "slug": "brand gradient light",
+          "color": "linear-gradient(90deg,rgb(119, 89, 210) 0%,rgb(226, 184, 246) 100%)"
+        },
+        {
+          "name": "Brand Gradient Dark",
+          "slug": "brand gradient dark",
           "color": "linear-gradient(90deg,rgb(119, 89, 210) 0%,rgb(14, 17, 41) 100%)"
         }
       ]
