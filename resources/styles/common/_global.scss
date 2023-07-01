@@ -136,6 +136,12 @@ select::-ms-expand {
     z-index: 10;
 }
 
+.has-brand-gradient-color {
+    background: var(--wp--preset--color--brand-gradient) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent;
+}
+
 .has-brand-gradient-background-color {
     background: var(--wp--preset--color--brand-gradient) !important;
 }
