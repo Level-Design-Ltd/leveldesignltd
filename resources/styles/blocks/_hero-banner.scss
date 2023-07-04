@@ -20,6 +20,18 @@
         }
     }
 
+    .wp-block-image {
+        img {
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+
+            @include respond(tablet) {
+                margin: 0;
+            }
+        }
+    }
+
     .wp-block-buttons {
         justify-content: center;
         position: relative;
