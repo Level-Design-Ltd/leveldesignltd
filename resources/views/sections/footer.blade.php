@@ -9,7 +9,7 @@
 				</a>
 			@endif
 
-			{!! __('© 2023 Level Design Ltd | Company Number: 13961411', 'leveldesignltd') !!}
+			{!! __('© ' . date("Y") . ' Level Design Ltd | Company Number: 13961411', 'leveldesignltd') !!}
 		</div>
 		<div class="half">
 			<a href="/privacy-policy">{!! __('Privacy Policy', 'leveldesignltd') !!}</a>
