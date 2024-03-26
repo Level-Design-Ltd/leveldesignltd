@@ -4,107 +4,81 @@
   "version": 2,
   "settings": {
     "color": {
-      "custom": false,
-      "customDuotone": false,
-      "customGradient": false,
-      "defaultDuotone": false,
-      "defaultGradients": false,
-      "defaultPalette": false,
-      "duotone": [],
       "palette": [
         {
+          "color": "#000000",
           "name": "Black",
-          "slug": "black",
-          "color": "#000000"
+          "slug": "black"
         },
         {
+          "color": "#ffffff",
           "name": "White",
-          "slug": "white",
-          "color": "#ffffff"
+          "slug": "white"
         },
         {
+          "color": "#0e1129",
           "name": "Brand Dark",
-          "slug": "brand dark",
-          "color": "#0e1129"
+          "slug": "brand dark"
         },
         {
+          "color": "#edf2f4",
           "name": "Brand Light",
-          "slug": "brand light",
-          "color": "#edf2f4"
+          "slug": "brand light"
         },
         {
+          "color": "#7759d2",
           "name": "Brand Primary",
-          "slug": "brand primary",
-          "color": "#7759d2"
+          "slug": "brand primary"
         },
         {
+          "color": "#004fff",
           "name": "Brand Secondary",
-          "slug": "brand secondary",
-          "color": "#004fff"
+          "slug": "brand secondary"
         },
         {
+          "color": "#e2b8f6",
           "name": "Brand Tertiary",
-          "slug": "brand tertiary",
-          "color": "#e2b8f6"
+          "slug": "brand tertiary"
         },
         {
+          "color": "linear-gradient(90deg,rgb(119, 89, 210) 0%,rgb(226, 184, 246) 100%)",
           "name": "Brand Gradient Light",
-          "slug": "brand gradient light",
-          "color": "linear-gradient(90deg,rgb(119, 89, 210) 0%,rgb(226, 184, 246) 100%)"
+          "slug": "brand gradient light"
         },
         {
+          "color": "linear-gradient(90deg,rgb(119, 89, 210) 0%,rgb(14, 17, 41) 100%)",
           "name": "Brand Gradient Dark",
-          "slug": "brand gradient dark",
-          "color": "linear-gradient(90deg,rgb(119, 89, 210) 0%,rgb(14, 17, 41) 100%)"
+          "slug": "brand gradient dark"
         }
       ]
     },
-    "custom": {
-      "spacing": {},
-      "typography": {
-        "font-size": {},
-        "line-height": {}
-      }
-    },
-    "spacing": {
-      "padding": true,
-      "units": [
-        "px",
-        "%",
-        "em",
-        "rem",
-        "vw",
-        "vh"
-      ]
-    },
     "typography": {
-      "customFontSize": false,
       "fontFamilies": [],
       "fontSizes": [
         {
           "name": "Paragraph 5",
-          "slug": "Paragraph 5",
-          "size": "12px"
+          "size": "12px",
+          "slug": "Paragraph 5"
         },
         {
           "name": "Paragraph 4",
-          "slug": "Paragraph 4",
-          "size": "16px"
+          "size": "16px",
+          "slug": "Paragraph 4"
         },
         {
           "name": "Paragraph 3",
-          "slug": "Paragraph 3",
-          "size": "18px"
+          "size": "18px",
+          "slug": "Paragraph 3"
         },
         {
           "name": "Paragraph 2",
-          "slug": "Paragraph 2",
-          "size": "20px"
+          "size": "20px",
+          "slug": "Paragraph 2"
         },
         {
           "name": "Paragraph 1",
-          "slug": "Paragraph 1",
-          "size": "33px"
+          "size": "33px",
+          "slug": "Paragraph 1"
         }
       ]
     }
