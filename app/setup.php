@@ -24,7 +24,19 @@ add_action('wp_enqueue_scripts', function () {
  */
 add_action('enqueue_block_editor_assets', function () {
     bundle('editor')->enqueue();
+
+	wp_enqueue_script(
+        'button-block-editor',
+        get_theme_file_uri('/public/js/button-block.js'),
+        array('wp-blocks', 'wp-i18n', 'wp-element', 'wp-editor'),
+        true
+    );
 }, 100);
+
+// add_action('enqueue_block_assets', function () {
+// 	wp_enqueue_style('button-block', get_theme_file_uri('public/css/button-block.ef82a9.css'));
+// }, 100);
+
 
 /**
  * Register the initial theme setup.
@@ -42,6 +54,7 @@ add_action('after_setup_theme', function () {
         'nav-walker',
         'nice-search',
         'relative-urls',
+		'wp-block-style',
     ]);
 
     /**
@@ -125,3 +138,4 @@ if (function_exists('acf_add_options_page')) {
 		'redirect' => false
 	]);
 }
+

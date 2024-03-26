@@ -15,6 +15,7 @@ export default async (app) => {
     app.entry({
         app: ["@scripts/app", "@styles/app"],
         editor: ["@scripts/editor", "@styles/editor"],
+        "button-block": ["/scripts/blocks/button-block/index"],
     })
 
         /**
